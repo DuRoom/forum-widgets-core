@@ -1,0 +1,49 @@
+{
+    "name": "duroom/forum-widgets-core",
+    "description": "Core Extension for Managing Forum Widgets",
+    "keywords": [
+        "duroom", "widgets", "framework", "core"
+    ],
+    "type": "duroom-extension",
+    "license": "MIT",
+    "support": {
+      "issues": "https://github.com/DuRoom/forum-widgets-core/issues",
+      "source": "https://github.com/DuRoom/forum-widgets-core",
+      "forum": "https://discuss-duroom.js.org/"
+    },
+    "require": {
+        "duroom/core": "^1.2"
+    },
+    "require-dev": {
+        "duroom/testing": "^1.0.0"
+    },
+    "authors": [
+        {
+            "name": "NKDuy",
+            "email": "kn145660@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "DuRoom\\ForumWidgets\\": "src/"
+        },
+        "files": ["src/helpers.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DuRoom\\ForumWidgets\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.1.x-dev"
+        },
+        "duroom-extension": {
+            "title": "Forum Widgets",
+            "category": "",
+            "icon": {
+                "image": "icon.svg"
+            }
+        }
+    }
+}
